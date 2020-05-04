@@ -23,15 +23,6 @@ public class StudentController {
 	public ModelAndView mvcindex() {
 		return new ModelAndView("index");
 	}
-
-//	//查询所有
-//	@RequestMapping("/listStudent")
-//	public @ResponseBody List<Student> listStudent(Model model) throws Exception{
-//		 List<Student> list=studentService.findAll();
-//		// list.get(0).getClasses().getClassname();
-//	        model.addAttribute("lists", list);
-//	        return list;	
-//	}
 	
 	//查询所有
 		@RequestMapping("/listStudent")
