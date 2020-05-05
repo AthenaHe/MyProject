@@ -2,11 +2,6 @@ package com.hh.School.entity;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import javassist.SerialVersionUID;
@@ -22,11 +17,6 @@ import javassist.SerialVersionUID;
 public class Score{
 	//private static final long SerialVersionUID = 1L;
 	@EmbeddedId
-//	@ManyToOne(fetch = FetchType.LAZY)
-//	@JoinColumns({
-//		@JoinColumn(name = "sc_sno",referencedColumnName = "sno"),
-//		@JoinColumn(name = "sc_cno",referencedColumnName = "cno")
-//	})
 	private ScorePK scorePK;
     private int score;
 	
@@ -51,4 +41,5 @@ public class Score{
 	public void setScore(int score) {
 		this.score = score;
 	}
+	
 }

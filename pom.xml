@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+	<!--  <java-jar-plugin.version>3.1.1</java-jar-plugin.version>-->	
 	</properties>
 
 	<dependencies>
@@ -65,7 +66,7 @@ spring-boot-starter-test ：测试模块，包括 JUnit、Hamcrest、Mockito。 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.19</version><!--我装的是8.0.19版本-->
+          	<version>8.0.19</version><!--$NO-MVN-MAN-VER$--><!-- 我装的是8.0.19版本-->
         </dependency>
         <!-- jpa-->
         <dependency>
